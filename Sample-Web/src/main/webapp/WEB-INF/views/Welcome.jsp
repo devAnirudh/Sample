@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@page import="com.entity.Bugs"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.net.URLDecoder"%>
@@ -30,6 +31,8 @@
 		Cookie co[] = request.getCookies();
 		if (co.length > 1) {
 
+			Enumeration<String> e = session.getAttributeNames();
+			
 			for (Cookie co_temp : co) {
 
 				if (co_temp.getName().equalsIgnoreCase("user_f_name"))

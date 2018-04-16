@@ -52,7 +52,7 @@ input {
 <body>
 	
 
-	<form action="Login" method="post">
+	<form modelAttribute="login" action="login" method="post">
 		<div class="container_login" id="container_login"
 			style="display: block">
 
